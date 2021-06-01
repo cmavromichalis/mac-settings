@@ -26,3 +26,20 @@ brew tap homebrew/cask-fonts
 
 In iTerm2 go Preferences -> Profiles -> (Profile) -> Text -> Font -> Hack Nerd Font Mono
 ```
+
+## Python
+```
+brew install pyenv
+pyenv install <latest version> # user `pyenv install --list`
+pyenv global 3.9.5
+```
+
+Add this to zshrc:
+```
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+```
