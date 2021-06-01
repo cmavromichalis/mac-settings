@@ -1,6 +1,12 @@
 # mac-settings
 My setup for working on Mac
 
+## GitHub
+Hide user email with:
+```
+git config user-email cmavromichalis@users.noreply.github.com
+```
+
 ## brew
 https://brew.sh/
 
