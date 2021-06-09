@@ -27,6 +27,33 @@ brew tap homebrew/cask-fonts
 In iTerm2 go Preferences -> Profiles -> (Profile) -> Text -> Font -> Hack Nerd Font Mono
 ```
 
+Install NerdTree, configure to show hidden files, enable version control:
+In `~/.SpaceVim.d/init.toml` add:
+```
+[options]
+  ...
+  filemanager = "nerdtree"
+  
+[[layers]]
+  name = "lang#go"
+
+[[layers]]
+    name = 'core'
+    filetree_show_hidden = true
+
+[[layers]]
+    name = 'git'
+
+[[layers]]
+    name = 'VersionControl'
+```
+
+Open NerdTree on vim startup:
+In `~/.SpaceVim/vimrc` add:
+" " Start NERDTree and leave the cursor in it.
+autocmd VimEnter * NERDTree
+
+
 ## Python
 ```
 brew install pyenv
