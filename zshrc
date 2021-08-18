@@ -17,6 +17,7 @@ setopt prompt_subst
 
 # Config for prompt. PS1 synonym.
 prompt='%F{green}%~%f %F{blue}$(git_branch_name)%f %F{red}>%f '
+RPROMPT="[%D{%f/%m/%y} | %D{%L:%M:%S}]"
 
 # Alias to clear aws cli session information
 alias awsclear='unset AWS_ACCESS_KEY_ID && unset AWS_SESSION_TOKEN && unset AWS_SECRET_ACCESS_KEY'
